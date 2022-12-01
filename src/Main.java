@@ -20,20 +20,6 @@ public class Main {
         in.setInHeader(Header);
         in.setInLine(Line);
 
-        Invoices = in.returnAllInvoices();
-        for (Inovice i : Invoices) {
-
-            System.out.println(i.toString());
-
-            items = i.getInvoiceItems();
-            for (Item item : items) {
-                System.out.println(/* "item name  " + */ item);
-
-            }
-            System.out.println("***************************************" + "****************************************"
-                    + "*************************************");
-        }
-
         InvoiceFrame JF = new InvoiceFrame();
         JF.LaunchJFrame();
 
